@@ -32,6 +32,7 @@ const Home: NextPage = () => {
       </section>
 
       {/* Projects */}
+      <section id="projects" className="snap-center"></section>
 
       {/* Contact Me */}
     </div>
