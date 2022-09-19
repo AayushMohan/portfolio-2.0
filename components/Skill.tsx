@@ -16,7 +16,7 @@ const Skill = ({ directionLeft }: Props) => {
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
         src="https://avatars.githubusercontent.com/u/17177659?s=280&v=4"
-        className="rounded-full border-gray-500 object-cover w-24 h-24 xl:w-32"
+        className="rounded-full border-gray-500 object-cover w-24 h-24 xl:w-32 xl:h-32"
       />
     </div>
   );
