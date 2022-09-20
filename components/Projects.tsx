@@ -32,7 +32,7 @@ function Projects({}: Props) {
                 OpenSea Clone
               </h4>
 
-              <p className="">
+              <p className="text-lg text-center md:text-left">
                 This site is a clone of Opensea, the first and largest NFT
                 marketplace in the world. Users can use Metamask to authenticate
                 and purchase samples from the collection.
