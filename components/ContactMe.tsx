@@ -15,9 +15,14 @@ const ContactMe = (props: Props) => {
           I have got just what you need.{" "}
           <span className="decoration-[#F7AB0A]/50 underline">Lets Talk.</span>
         </h4>
-      </div>
 
-      <div></div>
+        <div>
+          <div className="flex items-center space-x-5 justify-center">
+            <PhoneIcon className="h-7 w-7" />
+            <p>+1234567890</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
