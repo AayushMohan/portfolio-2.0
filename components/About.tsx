@@ -1,15 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { PageInfo } from "../typings";
+import { urlFor } from "../sanity";
 
-type Props = {};
+type Props = {
+  pageInfo: PageInfo;
+};
 
-function About({}: Props) {
+function About({ pageInfo }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 py-10 justify-evenly mx-auto items-center"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
@@ -20,8 +24,8 @@ function About({}: Props) {
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        src="https://avatars.githubusercontent.com/u/66319691?v=4"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95  xl:w-[400px] xl:h-[500px]"
+        src={urlFor(pageInfo?.profilePic).url()}
+        className="-mb-20 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-95  xl:w-[400px] xl:h-[500px]"
       />
 
       <div className="space-y-10 px-0 md:px-10">
@@ -30,18 +34,7 @@ function About({}: Props) {
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
         </h4>
-        <p className="text-base">
-          {`
-           I'm a Frontend Web Developer with a passion for outstanding design and
-           technology. I like to think of myself as a leader who is willing to go
-           above and beyond to see that our product goal is realized. I'm
-           extremely enthusiastic about design and carrying it through to
-           completion. I'm a big fan of science and technology, so I strive to
-           stay on top of things so that our consumers get the greatest
-           experience possible. Currently expanding my horizon in 
-           UI & UX.
-          `}
-        </p>
+        <p className="text-base">{pageInfo?.backgroundInformation}</p>
       </div>
     </motion.div>
   );
