@@ -3,7 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["avatars.githubusercontent.com", "aayushmohan.dev"],
+    domains: [
+      "avatars.githubusercontent.com",
+      "aayushmohan.dev",
+      "cdn.sanity.io",
+    ],
   },
 };
 
