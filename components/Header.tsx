@@ -50,6 +50,7 @@ function Header({ socials }: Props) {
             network="email"
             fgColor="gray"
             bgColor="transparent"
+            href="#contact"
           />
           <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
             Get In Touch

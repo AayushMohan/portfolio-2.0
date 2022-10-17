@@ -26,6 +26,7 @@ function About({ pageInfo }: Props) {
         viewport={{ once: true }}
         src={urlFor(pageInfo?.profilePic).url()}
         className="-mb-10 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-95  xl:w-[400px] xl:h-[500px]"
+        alt="User Profile Pic"
       />
 
       <div className="space-y-10 px-0 md:px-16 md:text-left text-center">
