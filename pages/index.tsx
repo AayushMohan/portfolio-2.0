@@ -7,7 +7,6 @@ import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import { PageInfo, Project, Skill, Social } from "../typings";
-import { fetchExperiences } from "../utils/fetchExperiences";
 import { fetchPageInfo } from "../utils/fetchPageInfo";
 import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSkill } from "../utils/fetchSkills";
@@ -15,7 +14,6 @@ import { fetchSocial } from "../utils/fetchSocials";
 
 type Props = {
   pageInfo: PageInfo;
-
   skills: Skill[];
   projects: Project[];
   socials: Social[];
