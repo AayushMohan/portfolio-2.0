@@ -60,7 +60,7 @@ function Projects({ projects }: Props) {
                 ))}
               </div>
 
-              <p className="text-lg px-2 leading-relaxed text-center md:mx-16">
+              <p className="text-lg py-4 px-2 leading-relaxed text-center md:mx-16">
                 {project?.summary}
               </p>
             </div>
