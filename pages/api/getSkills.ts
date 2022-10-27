@@ -1,11 +1,12 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import {groq} from "next-sanity";
-import {sanityClient} from "../../sanity";
+import { groq } from "next-sanity";
+import { sanityClient } from "../../sanity";
 import { Skill } from "../../typings";
 
 const query = groq`
  *[_type=='skill']
-`
+`;
+
 type Data = {
  skills: Skill[],
 }
