@@ -15,7 +15,7 @@ const ContactMe = ({}: Props) => {
   const { register, handleSubmit } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:aayushmohan1702@gmail?subject=${formData.subject}&body=Hi, my name is ${formData.name} ${formData.message}`;
+    window.location.href = `mailto:contact@aayushmohan.dev?subject=${formData.subject}&body=Hi, my name is ${formData.name} ${formData.message}`;
   };
 
   return (
@@ -33,7 +33,7 @@ const ContactMe = ({}: Props) => {
         <div className="space-y-10">
           <div className="flex items-center md:space-x-5 space-x-2 justify-center ">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-xl md:text-2xl">aayushmohan1702@gmail.com</p>
+            <p className="text-xl md:text-2xl">contact@aayushmohan.dev</p>
           </div>
         </div>
 
