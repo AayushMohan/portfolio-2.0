@@ -15,7 +15,7 @@ const Hero = ({ pageInfo }: Props) => {
     words: [
       `Hi, The Name's ${pageInfo?.name}`,
       "Guy-who-loves-Coffee.tsx",
-      "<ButLovesToCodeMore />",
+      "But Loves To Code More!",
     ],
     loop: true,
     delaySpeed: 2000,
